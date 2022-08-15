@@ -1,7 +1,6 @@
 import * as React from "react"
 import '../styles/index_styling.css'
 
-// markup
 const IndexPage = () => {
   return (
     <div style={{
