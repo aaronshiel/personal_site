@@ -1,24 +1,36 @@
 import React, { useEffect, useState } from 'react';
 import { CenterScreenContainerDiv, ColDiv } from '../styled-components';
 import ShmovinMaple from "../assets/shmovin.gif" 
+import MapleDropName from '../assets/MapleDropName.png'
 import '../index.css';
 
-// TODO: Falling leaves all over page
+// TODO: Page starts covered in maple leaves
+// and the user clicks to remove the leaves and reveal me
+
+// update favicon to be a maple leaf
+
+// Nicer text (maybe a generated title?)
 
 export default function Index(): JSX.Element {
   const [numClicks, setNumClicks] = useState(0);
   console.log(numClicks)
   return(
     <CenterScreenContainerDiv style={{
-      backgroundColor:"lightblue"
+      backgroundColor:"lightblue",
+      overflow:"hidden",
     }}>
       <ColDiv style={{
-        width:"fit-content",
-        alignItems:"center"
+        width:"80%",
+        alignItems:"center",
       }}>
-        <h1 style={{
-          width:"fit-content",
-        }}>Maple Drop</h1>
+        <img
+        src={MapleDropName}
+        alt="MapleDropName"
+        style={{
+          width: "50%",
+          height: "auto"
+        }}
+        />
         <img
         src={ShmovinMaple}
         alt="Shmovin Maple"
