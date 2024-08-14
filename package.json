@@ -1,30 +1,52 @@
 {
-  "name": "personal_site",
-  "version": "1.0.0",
+  "name": "my-app",
+  "version": "0.1.0",
   "private": true,
-  "description": "personal_site",
-  "author": "aaronshiel",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+  "overrides": {
+    "styled-components": "^6.1.0"
   },
   "dependencies": {
-    "gatsby": "^4.19.2",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "usehooks-ts": "^2.6.0"
+    "@react-google-maps/api": "^2.19.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.38",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "PORT=80 react-scripts start",
+    "prettify": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "@types/node": "^17.0.45",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "typescript": "^4.7.4"
+    "prettier": "^3.0.0"
   }
 }

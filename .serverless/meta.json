@@ -1,0 +1,21 @@
+{
+  "unknown": {
+    "versionSfCore": null,
+    "versionFramework": "4.1.22",
+    "isWithinCompose": false,
+    "composeOrgName": null,
+    "composeServiceName": null,
+    "command": [],
+    "options": {},
+    "error": {
+      "message": "Sorry, our authentication service is currently experiencing issues. Please try again in a few moments. We've been alerted of the issue.",
+      "stack": "Error: Sorry, our authentication service is currently experiencing issues. Please try again in a few moments. We've been alerted of the issue.\n    at Authentication.authenticate (file:///root/.serverless/releases/4.1.22/package/dist/sf-core.js:937:12411)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Authentication.getAuthenticatedData (file:///root/.serverless/releases/4.1.22/package/dist/sf-core.js:935:10674)\n    at async routeNew (file:///root/.serverless/releases/4.1.22/package/dist/sf-core.js:905:7950)\n    at async commandOnboarding (file:///root/.serverless/releases/4.1.22/package/dist/sf-core.js:905:5024)\n    at async catchAllHandler (file:///root/.serverless/releases/4.1.22/package/dist/sf-core.js:930:19757)\n    at async runCommand (file:///root/.serverless/releases/4.1.22/package/dist/sf-core.js:934:4149)\n    at async route (file:///root/.serverless/releases/4.1.22/package/dist/sf-core.js:945:14849)\n    at async Object.run2 [as run] (file:///root/.serverless/releases/4.1.22/package/dist/sf-core.js:945:16754)\n    at async run3 (file:///root/.serverless/releases/4.1.22/package/dist/sf-core.js:945:18014)"
+    },
+    "machineId": "59296268bf166274c5f0e5147818a5a0",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}
