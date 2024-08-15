@@ -1,0 +1,9 @@
+        /* Keyframes for the falling animation */
+        @keyframes fall {
+            0% {
+                top: -50px; /* Start above the screen */
+            }
+            100% {
+                top: 100vh; /* End below the screen */
+            }
+        }
