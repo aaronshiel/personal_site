@@ -4,6 +4,7 @@ import ShmovinMaple from '../assets/shmovin.gif';
 import MapleDropName from '../assets/MapleDropName3.png';
 import '../index.css';
 import { FallingLeaves } from '../components/RandomFallingLeaves';
+import backgroundImage from '../assets/background/fall-leaves.jpg';
 
 // TODO: Page starts covered in maple leaves
 // and the user clicks to remove the leaves and reveal me
@@ -20,12 +21,14 @@ export default function Index(): JSX.Element {
       style={{
         backgroundColor: 'lightblue',
         overflow: 'hidden',
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
       }}
     >
       <FallingLeaves />
       <ColDiv
         style={{
-          width: '80%',
+          width: '100%',
           alignItems: 'center',
         }}
       >
@@ -33,8 +36,9 @@ export default function Index(): JSX.Element {
           src={MapleDropName}
           alt="MapleDropName"
           style={{
-            width: '50%',
-            height: 'auto',
+            width: 'auto',
+            maxWidth: '80vw',
+            maxHeight: '30vh',
           }}
         />
         <img
@@ -44,8 +48,8 @@ export default function Index(): JSX.Element {
             setNumClicks((prev) => prev + 1);
           }}
           style={{
-            width: '50%',
-            height: 'auto',
+            width: 'auto',
+            height: '70vh',
             zIndex: 1,
           }}
         />
