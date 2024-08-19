@@ -25,7 +25,7 @@ export default function Index(): JSX.Element {
         backgroundSize: 'cover',
       }}
     >
-      <FallingLeaves />
+      {/* <FallingLeaves /> */}
       <ColDiv
         style={{
           width: '100%',
