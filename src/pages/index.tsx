@@ -18,14 +18,21 @@ export default function Index(): JSX.Element {
 
   return (
     <CenterScreenContainerDiv
-      style={{
-        backgroundColor: 'lightblue',
-        overflow: 'hidden',
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-      }}
+      // style={{
+      //   backgroundColor: 'lightblue',
+      //   overflow: 'hidden',
+      //   backgroundImage: `url(${backgroundImage})`,
+      //   backgroundSize: 'cover',
+      // }}
     >
-      <FallingLeaves />
+
+<div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <h1 className="text-4xl font-bold text-blue-600">Hello, Vite + Tailwind with TypeScript!</h1>
+      <button className="mt-4 px-6 py-3 bg-green-500 text-white rounded hover:bg-green-600">
+        Click Me
+      </button>
+    </div>
+      {/* <FallingLeaves />
       <ColDiv
         style={{
           width: '100%',
@@ -53,7 +60,8 @@ export default function Index(): JSX.Element {
             zIndex: 1,
           }}
         />
-      </ColDiv>
+        
+      </ColDiv> */}
     </CenterScreenContainerDiv>
   );
 }
