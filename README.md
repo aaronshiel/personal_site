@@ -1,3 +1,7 @@
+### Setup
+Node 21.7.3
+
+
 To upload to s3 static bucket for hosting:
 
 Prerequisites:
